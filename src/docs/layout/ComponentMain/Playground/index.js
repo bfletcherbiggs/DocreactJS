@@ -32,7 +32,7 @@ class Playground extends React.Component {
   parseCodeToTxt(exampleObj) {
     return (
       `${/\/\*{2}[^]+(?=export default)/.exec(exampleObj.code)[0].trim()}
-  return <${exampleObj.name} />`
+return <${exampleObj.name} />`
     )
   }
 
@@ -44,7 +44,8 @@ class Playground extends React.Component {
     const { className } = this.props;
     const { code } = this.state;
     return (
-      <aside className={className}>
+      <aside className={'playground-section'}>
+        <h3>Playground</h3>
         <Editor
           ref='editor'
           className={style.editor}

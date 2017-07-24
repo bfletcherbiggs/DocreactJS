@@ -1,4 +1,6 @@
 @import '../config.styl';
+@import '../../../colors.styl';
+@import '../../../variables.styl';
 
 .editor,
 .preview {
@@ -29,4 +31,11 @@
   display: flex;
   left: 0;
   top: 50%;
+}
+
+.playground-section{
+  width: 50%;
+  background-color: var(--palette-indigo-100);
+  height: 100vh;
+  padding: var(--unit);
 }
