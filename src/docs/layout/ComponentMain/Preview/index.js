@@ -65,6 +65,7 @@ class Preview extends React.Component{
   executeCode () {
     const mountNode = this.refs.mount;
     const scope = this.buildScope(mountNode);
+    console.log(scope);
 
     try {
       ReactDOM.unmountComponentAtNode(mountNode);
